@@ -1,4 +1,5 @@
 import { mesure } from "./mesure";
+import { to_roman } from "./random";
 import {
   arr_prod,
   capitalize_arr,
@@ -21,6 +22,7 @@ import {
 } from "./recursion";
 import { nested_even_sum } from "./recursion/recursion/recursion/nested_even_sum";
 import { power } from "./recursion/recursion/recursion/power";
+import { binary_search } from "./search";
 
 // TODO: iterative make palindrome, flatten, some
 // TODO: Roman Numerals
@@ -43,17 +45,10 @@ const obj1 = {
     },
   },
 };
-mesure("nested_even_sum", () => nested_even_sum(obj));
-mesure("stringify_obj_fields", () => stringify_fields(obj));
-mesure("extract_string", () => extract_string(obj1).length);
-
-// 1	 -> I
-// 2	 -> II
-// 3	 -> III
-// 4	 -> IV
-// 5	 -> V
-// 6	 -> VI
-// 7	 -> VII
-// 8	 -> VIII
-// 9	 -> IX
-// 10		-> X
+// mesure("nested_even_sum", () => nested_even_sum(obj));
+// mesure("stringify_obj_fields", () => stringify_fields(obj));
+// mesure("extract_string", () => extract_string(obj1).length);
+// console.log("roman", to_roman(11));
+mesure("binary search", () =>
+  console.log("result", binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5))
+);
