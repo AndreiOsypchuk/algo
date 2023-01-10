@@ -13,3 +13,7 @@ export * from "./recursion/recursion/make_palindrome";
 export * from "./recursion/recursion/some";
 export * from "./recursion/recursion/flatten";
 export * from "./recursion/recursion/capitalize_arr";
+export * from "./recursion/recursion/nested_even_sum";
+export * from "./recursion/recursion/stringify_obj_fields";
+export * from "./recursion/recursion/extract_string";
+export * from "./iterative_solutions";
